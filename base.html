@@ -5,16 +5,100 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css" media="screen,projection" />
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+
+    <title>COOTEMARPI - Home</title>
 </head>
 
 <body>
+    <!-- start navbar -->
+    <nav>
+        <div class="nav-wrapper container">
+            <a href="#!" class="brand-logo">COOTEMARPI</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+    <!-- end navbar -->
+
+    <!-- start main -->
+    <main>
+
+    </main>
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">COOTEMARPI</h5>
+                    <p class="grey-text text-lighten-4">Cooperativa de Catadores de Materiais Reciclaveis de Teresina
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Nos acompanhe nas redes sociais</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/cooperativa.cootemarpi.9"
+                                target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/cootemarpi/"
+                                target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.youtube.com/watch?v=LsWMOumwl6s&feature=youtu.be" target="_blank"><i
+                                    class="fab fa-youtube"></i> Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Todos os direitos reservados
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
 
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="static/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/2f1436b534.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
