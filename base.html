@@ -20,6 +20,11 @@
         main {
             flex: 1 0 auto;
         }
+
+        .logo-img {
+            max-height: 64px !important;
+            padding: 5px 0 !important;
+        }
     </style>
 
     <title>COOTEMARPI - Home</title>
@@ -27,9 +32,11 @@
 
 <body>
     <!-- start navbar -->
-    <nav>
+    <nav class="green">
         <div class="nav-wrapper container">
-            <a href="#!" class="brand-logo">COOTEMARPI</a>
+            <a href="#" class="brand-logo">
+                <img src="static/img/logo.png" alt="" class="logo-img">
+            </a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Home</a></li>
@@ -57,7 +64,7 @@
     <!-- end main -->
 
     <!-- start footer -->
-    <footer class="page-footer">
+    <footer class="page-footer green">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -81,7 +88,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright center">
+        <div class="footer-copyright green darken-1 center">
             <div class="container">
                 © 2019 Cootemarpi Av. Desembargador Pires de Castro, 173-S, Edifício Milka Carvalho, Teresina - PI,
                 64002-490
