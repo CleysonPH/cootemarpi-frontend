@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="static/materialize/css/materialize.min.css"
+        media="screen,projection" />
+    <!-- Import Animate.css -->
+    <link rel="stylesheet" href="static/css/animate.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +23,11 @@
         main {
             flex: 1 0 auto;
         }
+
+        .logo-img {
+            max-height: 64px !important;
+            padding: 5px 0 !important;
+        }
     </style>
 
     <title>COOTEMARPI - Home</title>
@@ -27,10 +35,12 @@
 
 <body>
     <!-- start navbar -->
-    <nav>
+    <nav class="green">
         <div class="nav-wrapper container">
-            <a href="#!" class="brand-logo">COOTEMARPI</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" class="brand-logo">
+                <img src="static/img/logo.png" alt="" class="logo-img">
+            </a>
+            <a href="#" data-target="mobile-navbar" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Blog</a></li>
@@ -41,7 +51,17 @@
         </div>
     </nav>
 
-    <ul class="sidenav" id="mobile-demo">
+    <ul class="sidenav" id="mobile-navbar">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="https://picsum.photos/300/200" alt="">
+                </div>
+                <a href="#user"><img class="circle" src="static/img/logo.png"></a>
+                <a href="#name"><span class="white-text name">COOTEMARPI</span></a>
+                <a href="#email"><span class="white-text email">cooperativacootemarpi@gmail.com</span></a>
+            </div>
+        </li>
         <li><a href="#">Home</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Sobre Nós</a></li>
@@ -51,13 +71,13 @@
     <!-- end navbar -->
 
     <!-- start main -->
-    <main>
+    <main class="container">
 
     </main>
     <!-- end main -->
 
     <!-- start footer -->
-    <footer class="page-footer">
+    <footer class="page-footer green">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -81,7 +101,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright center">
+        <div class="footer-copyright green darken-1 center">
             <div class="container">
                 © 2019 Cootemarpi Av. Desembargador Pires de Castro, 173-S, Edifício Milka Carvalho, Teresina - PI,
                 64002-490
@@ -91,7 +111,7 @@
     <!-- end footer -->
 
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="static/js/materialize.min.js"></script>
+    <script type="text/javascript" src="static/materialize/js/materialize.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.sidenav');
