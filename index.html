@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="static/css/style.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COOTEMARPI</title>
+</head>
+
+<body>
+
+    <div class="landing white-text">
+        <div class="container">
+            <div class="nav-menu">
+                <nav>
+                    <div class="nav-wrapper">
+                        <div class="logo"><img href="#!" id="cootemarpi-logo" src="cootemarpi-logo.png" alt=""><a href="#!" class="brand-logo">COOTEMARPI</a></div>
+                        
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="#!" class="menu-link">Institucional</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="menu-link">Educacional</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="menu-link">Notíticas</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="menu-link">Cadastro</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="menu-link">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="#">Institucional</a></li>
+                <li><a href="#">Educacional</a></li>
+                <li><a href="#">Notíticas</a></li>
+                <li><a href="#">Cadastro</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <div class="row banner">
+                <div class="col l12 greetings-text center">
+                    <h1 class="greetings">Seja bem vindo a</h1>
+                    <h1 class="trademark">COOTEMARPI</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="static/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/2f1436b534.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
